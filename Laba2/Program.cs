@@ -8,9 +8,19 @@ class Program
         string inputString = Console.ReadLine();
 
         int length = inputString.Length;
+        int countOfB = 0;
+
+        foreach (char c in inputString)
+        {
+            if (c == 'б' || c == 'Б')
+            {
+                countOfB++;
+            }
+        }
 
         Console.WriteLine("Вы ввели: " + inputString);
         Console.WriteLine("Количество символов в строке: " + length);
+        Console.WriteLine("Количество букв 'б' в строке: " + countOfB);
 
         Console.ReadKey(); // Чтобы программа не закрылась сразу после вывода результата
     }
