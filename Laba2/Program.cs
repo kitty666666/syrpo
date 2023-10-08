@@ -8,5 +8,6 @@ class Program
         string inputString = Console.ReadLine();
 
         Console.WriteLine("Вы ввели: " + inputString);
+        Console.WriteLine("Ты молодец)) пака");
     }
 }
